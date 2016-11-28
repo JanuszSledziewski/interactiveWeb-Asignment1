@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<HEAD>
+	<meta charset="UTF-8">
+  <TITLE>Mug World</TITLE>
+  <LINK rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="description" content="Best mugs in world ">
+</HEAD>
+<BODY>
+	<HEADER id="header">		
+		<H1>MUG WORLD</h1>
+		<a id="logo" href=#basket>
+			<img src="pictures/cart.png" alt="Basket" style="width:50px;height:50px;">
+		</a>
+		<div class="gradBotton">
+		</div>
+	</HEADER>
+		
+		
+
+  <MAIN>
+	<section id="home">
+		<div class='center'>
+		<a  class='btn-bot' href="#size">Make Order</a>
+		</div>
+	</section>
+
+	
+<form action="http://atlantis.cit.ie/displayvalues.php" method="post">
+	<section id="size">
+		<div class="gradTop">
+		</div>
+	
+		<article>
+			<h3>Select Your Color</h3>
+			<figure>
+				<img id="cupIMG" class="" src="pictures/colormug1.jpg" alt="Color mug" width="300" height="300">
+				<div class="form">
+					<select id="selectColor" name="color"  onchange="checkColor()">
+						<option  selected disabled>Please select color</option>
+						<option  value="green">green</option>
+						<option  value="red">red</option>
+						<option  value="blue">blue</option>
+						<option  value="purple">purple</option>
+						<option  value="pink">pink</option>
+					</select>
+				</div>
+			</figure>
+		</article>
+		<article>
+			<h3>Select Size</h3>
+			<figure>
+				<img src="pictures/sizes1.jpg" alt="difrent size mugs" width="633" height="300">
+				<div class="form">
+				<select  id="getSize" name="size" onchange="checkSize()">
+					<option selected disabled value="0">Please select size</option>
+					<option value="small_9.99">Small &euro; 9.99</option>
+					<option value="medium_12.99">Medium &euro;12.99</option>
+					<option value="large_14.99" >Large &euro;14.99</option>
+					<option value="extraLarge_15.99">Extra Large &euro;15.99</option>
+				</select>
+				</div>
+			</figure>
+		</article>
+		
+		<div class="gradBotton">
+		</div>
+	</section>
+	
+	<section id="upgrade">
+		<div class="gradTop">
+		</div>
+		<article>
+			<h3>Whould You like some upgrade?</h3>
+			<div class="item">			
+				<img src="pictures/transparent.jpg" alt=" mug" width="300" height="300">
+				<h4>Transparent base &euro; 3</h4>					
+			<input id="base" type="checkbox" class="chkbox" name="transparent base" value="3" onchange="buy()"/>
+			</div>
+			<div class="item">	
+				<img src="pictures/theremos1.jpg" alt="theremos" width="343" height="300">
+					<h4>Thermos &euro; 7</h4>
+					<input id="thermos" type="checkbox" class="chkbox" name="thermos" value="7" onchange="buy()"/>
+			</div>
+			<div class="item">	
+				<img src="pictures/yourLogo1.jpg" alt="logo on mug" width="300" height="300">
+					<h4>Upload Your Logo &euro; 6</h4>
+					<input id="printLogo" type="checkbox" class="chkbox" name="logo" value="6" onchange="buy()" />
+			</div>
+			<div class="item">	
+				<img src="pictures/initials1.jpg" alt=" mug" width="300" height="300">
+					<h4>Engraved Intials &euro; 2</h4>
+					<input id="initials" type="checkbox" class="chkbox" name="engrave" value="2" onchange="buy()" />
+			</div>
+		</article>
+		
+		<div class="gradBotton">
+		</div>
+	</section>
+	
+	<section id="addons">
+		<div class="gradTop">
+		</div>
+		<article>
+			<h3>Would You like some add-ons?</h3>
+			<div class="item">	
+				<img src="pictures/hotPlate1.jpg" alt="hot plate" width="300" height="300">
+					<h4>Hot plate for mug &euro; 15</h4>
+					<input id="hotplate" type="checkbox" class="chkbox" name="hot plate" value="15" onchange="buy()" />
+			</div>
+			<div class="item">	
+				<img src="pictures/lid.jpg" alt=" mug" width="300" height="300">
+					<h4>Mug lid &euro; 3</h4>
+					<input id="lid" type="checkbox" class="chkbox" name="lid " value="3" onchange="buy()"/>
+			</div>
+			<div class="item">	
+				<img src="pictures/cord1.jpg" alt=" mug" width="300" height="300">
+					<h4>Mug pull cord &euro; 6</h4>
+					<input id="cord" type="checkbox" class="chkbox" name="pull cord" value="6" onchange="buy()"/>
+			</div>
+		</article>
+		<div class="gradBotton">
+		</div>
+	</section>
+	
+	<section id="supplier">
+		<div class="gradTop">
+		</div>
+		<article>
+			<h3>Would You like some supplies?</h3>
+			<div class="item">	
+				<img src="pictures/coffee1kg.jpg" alt="1kg coffee" width="300" height="300">
+					<h4>1kg Coffee &euro; 15</h4>
+					<input id="coffee" type="checkbox" class="chkbox" name="coffee" value="15" onchange="buy()"/>
+			</div>
+			<div class="item">	
+			<img src="pictures/condensedMilk.jpg" alt="condensed milk" width="300" height="300">
+					<h4>Condensed Milk &euro; 3</h4>
+					<input id="milk" type="checkbox" class="chkbox" name="milk" value="3" onchange="buy()"/>
+			</div>
+			<div class="item">	
+			<img src="pictures/tea.jpg" alt=" mug" width="300" height="300">
+					<h4>1000 tea bags &euro; 6</h4>
+					<input id="tea" type="checkbox" class="chkbox" name="tea" value="6" onchange="buy()"/>
+			</div>
+		</article>
+		<div class="gradBotton">
+		</div>
+	</section>
+	
+	<section id="basket">
+		<article>
+			<h3>Your Order</h3>
+			<div id="order">
+				<h5 id="blackboard" >Your basket is empty</h5>			
+			</div>	
+			<input id="submit" type="submit" value="Send Order">
+		</article>
+	
+	</section>
+	
+</form>	
+  </MAIN>
+  
+<footer id="footer">
+	<h5 >Copyright 2016 - MUG WORLD</h5>
+	<script src="js/js.js"></script>
+</footer>
+</BODY>
+ 
+</HTML>
